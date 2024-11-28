@@ -1,0 +1,35 @@
+:root {
+  --header-height: 3rem;
+  --max-width: 1600px;
+  --content-padding-sides: 0 2rem;
+
+  /* Brand Colors */
+  --primary-color: #004aad;
+  --secondary-color: #ffcc00;
+  --accent-color: #f15a24;
+
+  /* Neutral/Base Colors */
+  --base-light: #ffffff;
+  --base-dark: #1a1a1a;
+  --base-gray: #f4f4f4;
+  --border-color: #cccccc;
+
+  /* Text Colors */
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-inverse: #ffffff;
+
+  /* Status Colors */
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+  --error-color: #dc3545;
+
+  /* Interaction Colors */
+  --hover-primary: #00378c;
+  --hover-secondary: #e6b800;
+  --hover-accent: #d94716;
+
+  /* Shadows and Effects */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.25);
+}
