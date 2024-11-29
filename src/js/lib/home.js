@@ -71,18 +71,3 @@ if (Array.isArray(cardContents)) {
 } else {
   console.error("cardContents is not an array:", cardContents);
 }
-`<div class="card">
-            <img
-              class="card-image"
-              src="https://via.placeholder.com/200x150"
-              alt="Sports Image"
-            />
-            <div class="card-item-content">
-              <h3 class="card-header">Football</h3>
-              <p class="card-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Possimus, quae?
-              </p>
-              <a href="/sports/football" class="btn-accent">Learn More</a>
-            </div>
-          </div>`;

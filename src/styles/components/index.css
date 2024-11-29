@@ -1,4 +1,4 @@
-@import url("./nav.css");
-@import url("./footer.css");
+@import url("./nav/_index.css");
+@import url("./footer/_index.css");
 @import url("./card/_index.css");
 @import url("./carousel/_index.css");

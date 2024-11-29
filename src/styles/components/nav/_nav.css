@@ -42,6 +42,7 @@ nav {
     background-color: var(--primary-color);
     top: 0;
     left: 100%;
+    transition: all 0.25s ease-in-out;
 
     .link-container {
       display: flex;
@@ -51,6 +52,14 @@ nav {
       margin-top: 50px;
       height: 30vh;
       padding: 0.25rem;
+
+      .nav-link {
+        transition: all 0.15s ease;
+      }
+
+      .nav-link:hover {
+        color: var(--secondary-color);
+      }
     }
 
     .close,
