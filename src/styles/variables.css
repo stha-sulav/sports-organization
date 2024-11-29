@@ -1,7 +1,7 @@
 :root {
   --header-height: 3rem;
   --max-width: 1600px;
-  --content-padding-sides: 0 2rem;
+  --content-padding: 2rem;
 
   /* Brand Colors */
   --primary-color: #004aad;
