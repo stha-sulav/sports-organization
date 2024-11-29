@@ -5,10 +5,10 @@
   color: var(--text-inverse);
   padding: 3rem 1rem;
   border-radius: 8px;
-  margin-bottom: 2rem;
   position: relative;
 
   .overlay,
+  .bg,
   .hero-container {
     width: 100%;
     height: 100%;
@@ -18,14 +18,17 @@
   }
 
   .overlay {
-    opacity: 0.5;
+    opacity: 0.75;
     background: url("../../../images/basketball-court.jpg") center/cover
       no-repeat;
   }
 
+  .bg {
+    background-color: var(--background-color);
+  }
+
   .hero-container {
     z-index: 1;
-    background-color: var(--background-color);
     padding: var(--content-padding);
 
     .hero-content {
@@ -38,83 +41,30 @@
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
       }
-
-      .btn-primary {
-        padding: 0.75rem 1.5rem;
-        background-color: var(--secondary-color);
-        color: var(--text-inverse);
-        text-decoration: none;
-        border-radius: 4px;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-      }
-
-      .btn-primary:hover {
-        background-color: var(--hover-secondary);
-      }
     }
-
     .hero-img-container {
       display: none;
       z-index: 1;
     }
   }
+}
 
-  /* Featured Sports Section */
-  .featured-sports {
-    h2 {
-      text-align: center;
-      color: var(--primary-color);
-      margin-bottom: 2rem;
-      font-size: 1.8rem;
-    }
-    .sports-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
+/* Featured Sports Section */
+.featured-sports {
+  padding: var(--content-padding);
 
-    .sport-card {
-      background-color: var(--base-light);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      box-shadow: 0 4px 6px var(--shadow-light);
-      text-align: center;
-      padding: 1rem;
-      overflow: hidden;
-    }
+  h2 {
+    text-align: center;
+    margin: var(--content-padding);
+    font-size: 1.8rem;
+  }
 
-    .sport-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .sport-card h3 {
-      color: var(--primary-color);
-      margin: 1rem 0 0.5rem;
-    }
-
-    .sport-card p {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-
-    .btn-secondary {
-      padding: 0.5rem 1rem;
-      background-color: var(--accent-color);
-      color: var(--text-inverse);
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      transition: background-color 0.3s;
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--hover-accent);
-    }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--content-padding);
   }
 }
 
@@ -139,32 +89,102 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-basis: 100%;
-      }
-
-      .hero-img-container {
-        display: block;
-        flex-basis: 60%;
-        background-color: #ccc;
       }
     }
   }
 
-  .sports-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .featured-sports {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      place-items: center;
+    }
   }
 }
 
 @media (min-width: 1024px) {
-  .sports-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .hero {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .hero-container {
+      .hero-img-container {
+        display: block;
+        flex-basis: var(--hero-image-container-width);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hero-link-image {
+          display: block;
+          position: absolute;
+          transition: all 0.25s ease-in-out;
+
+          img {
+            height: var(--hero-link-image-height);
+            border: 5px solid var(--base-light);
+            border-radius: 5px;
+          }
+        }
+
+        .hero-link-image:hover {
+          transform: scale(1.1);
+          top: 15%;
+          z-index: 10;
+        }
+
+        .link-img-1 {
+          transform: rotate(-30deg);
+          left: 0%;
+        }
+        .link-img-2 {
+          top: 24%;
+        }
+        .link-img-3 {
+          transform: rotate(20deg);
+          right: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero .hero-container,
+  .featured-sports {
+    max-width: var(--max-width);
+    padding: 0;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  .hero {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .hero-container {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
-  .hero p {
-    font-size: 1.5rem;
+  .featured-sports {
+    margin: auto;
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
   }
 }

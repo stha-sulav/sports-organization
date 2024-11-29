@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script defer src="./js/navbar.js"></script>
-    <script defer src="./js/home.js"></script>
+    <script defer src="./js/lib/home.js"></script>
     <title>Campus Champs - University Sports Hub</title>
   </head>
   <body>
@@ -34,6 +34,7 @@
     <main>
       <section class="hero">
         <div class="overlay"></div>
+        <div class="bg"></div>
         <div class="hero-container">
           <div class="hero-content">
             <h1>Welcome to <span class="highlight">Campus Champs</span></h1>
@@ -41,47 +42,20 @@
               Your ultimate destination for sports activities and events at the
               university.
             </p>
-            <a href="/membership" class="btn-primary">Join Now</a>
+            <a href="/membership" class="btn-secondary">Join Now</a>
           </div>
-          <div class="hero-img-container"></div>
+          <div class="hero-img-container">
+            <a href="sports/cricket.html" title="Learn ore about our cricket team" class="hero-link-image link-img-1"><img src="images/cricket-bat.jpg" alt="Cricket bat"></a>
+            <a href="sports/skateboard.html" title="Learn ore about our skateboard team" class="hero-link-image link-img-2"><img src="images/skateboard.jpg" alt="Skateboard" ></a>
+            <a href="sports/baseball.html" title="Learn ore about our baseball team" class="hero-link-image link-img-3"><img src="images/baseball.jpg" alt="Baseball" ></a>
+          </div>
         </div>
       </section>
 
       <section class="featured-sports">
-        <h2>Explore Our Sports</h2>
-        <div class="sports-grid">
-          <div class="sport-card">
-            <img src="images/football.jpg" alt="Football" />
-            <h3>Football</h3>
-            <p>
-              Join the team or participate in tournaments to showcase your
-              talent.
-            </p>
-            <a href="/sports/football" class="btn-secondary">Learn More</a>
-          </div>
-          <div class="sport-card">
-            <img src="images/basketball.jpg" alt="Basketball" />
-            <h3>Basketball</h3>
-            <p>Stay active and competitive with our dynamic basketball team.</p>
-            <a href="/sports/basketball" class="btn-secondary">Learn More</a>
-          </div>
-          <div class="sport-card">
-            <img src="images/swimming.jpg" alt="Swimming" />
-            <h3>Swimming</h3>
-            <p>
-              Enhance your skills with professional training and competitions.
-            </p>
-            <a href="/sports/swimming" class="btn-secondary">Learn More</a>
-          </div>
-          <div class="sport-card">
-            <img src="images/tennis.jpg" alt="Tennis" />
-            <h3>Tennis</h3>
-            <p>
-              Enjoy the thrill of the game with world-class facilities and
-              coaching.
-            </p>
-            <a href="/sports/tennis" class="btn-secondary">Learn More</a>
-          </div>
+        <h2>Featured Sports</h2>
+        <div class="card-container">
+        </div>
         </div>
       </section>
     </main>

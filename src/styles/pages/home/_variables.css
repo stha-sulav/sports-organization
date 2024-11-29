@@ -1,3 +1,17 @@
 .hero {
   --background-color: rgba(3, 3, 3, 0.75);
+  --hero-link-image-height: 8rem;
+  --hero-image-container-width: 24rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero {
+    --hero-link-image-height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    --hero-link-image-height: 15rem;
+  }
 }
