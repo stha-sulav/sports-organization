@@ -23,7 +23,7 @@
           <div class="link-container">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About Us</a>
-            <a href="events.html" class="nav-link">Events</a>
+            <a href="events/index.html" class="nav-link">Events</a>
             <a href="announcements.html" class="nav-link">Announcements</a>
             <a href="contact.html" class="nav-link">Contact Us</a>
           </div>
@@ -102,10 +102,17 @@
       <!-- Testimonial -->
       <section class="testimonials">
         <h2>What Our Athletes Say</h2>
-        <div class="carousel">
-          <div class="carousel-btn prev">&#8656;</div>
-          <div class="carousel-btn next">&#8658;</div>
-          <div class="testimonial-container carousel-slide-container"></div>
+        <div class="carousel" data-carousel>
+          <div class="carousel-btn prev" data-carousel-button="prev">
+            &#8656;
+          </div>
+          <div class="carousel-btn next" data-carousel-button="next">
+            &#8658;
+          </div>
+          <div
+            class="testimonial-container carousel-slide-container"
+            data-slides
+          ></div>
         </div>
       </section>
     </main>

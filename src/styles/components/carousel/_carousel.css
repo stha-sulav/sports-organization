@@ -6,15 +6,31 @@
   .carousel-btn {
     position: absolute;
     top: 50%;
-    transform: translate(-50%, 0);
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    color: rgba(10, 10, 10, 0.5);
+    z-index: 5;
   }
 
   .prev {
-    left: 0;
+    left: 1rem;
   }
 
   .next {
-    left: 100%;
+    right: 1rem;
+  }
+
+  .carousel-btn:hover,
+  .carousel-btn:focus {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-btn:focus {
+    outline: 1px solid black;
   }
 
   .carousel-slide-container {
@@ -41,10 +57,26 @@
 
 @media only screen and (min-width: 768px) {
   .carousel {
+    margin: auto;
+    max-width: 850px;
     height: 23rem;
+
+    .carousel-btn {
+      top: 100%;
+    }
+
+    .prev {
+      left: 40%;
+    }
+
+    .next {
+      right: 40%;
+    }
+
     .carousel-slide-container {
       .slides[data-active] {
-        width: 20rem;
+        width: 40rem;
+        height: 20rem;
 
         img {
           display: block;

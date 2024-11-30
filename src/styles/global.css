@@ -36,6 +36,7 @@ header {
 
 main {
   margin-top: var(--header-height);
+  overflow: hidden;
 }
 
 footer {

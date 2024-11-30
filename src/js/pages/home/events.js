@@ -4,7 +4,7 @@ const events = [
     date: "2024-12-15",
     location: "Main Stadium, City Center",
     description: "Join us for the ultimate football showdown of the season!",
-    link: "/events/football-championship",
+    link: "events/football.html",
   },
   {
     title: "Basketball 3v3 Tournament",
@@ -12,14 +12,14 @@ const events = [
     location: "Sports Complex Arena",
     description:
       "Show off your skills in our fast-paced 3v3 basketball tournament.",
-    link: "/events/basketball-3v3",
+    link: "events/basketball-3v3/html",
   },
   {
     title: "Winter Swimming Gala",
     date: "2025-01-05",
     location: "Olympic Pool, Downtown",
     description: "Celebrate the new year with exciting swimming competitions.",
-    link: "/events/winter-swimming-gala",
+    link: "events/winter-swimming-gala.html",
   },
   {
     title: "Tennis Open Invitational",
@@ -27,7 +27,7 @@ const events = [
     location: "Tennis Courts, Sports Park",
     description:
       "Compete with the best at our annual Tennis Open Invitational.",
-    link: "/events/tennis-open-invitational",
+    link: "events/tennis-open-invitational.html",
   },
 ];
 

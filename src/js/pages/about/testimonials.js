@@ -68,7 +68,7 @@ if (Array.isArray(testimonialContent)) {
   testimonialContent.forEach((content, index) => {
     if (index === 0) {
       const slideDiv = content.querySelector(".slides");
-      slideDiv.setAttribute("data-active", "true");
+      slideDiv.setAttribute("data-active", null);
     }
 
     testimonialContainer.appendChild(content);
