@@ -1,0 +1,5 @@
+.hero {
+  .overlay {
+    background: url("../../../images/chess.jpg") center/cover no-repeat;
+  }
+}
