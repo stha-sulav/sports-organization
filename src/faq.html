@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/faq.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <script defer src="./functionality/navbar.js"></script>
-    <title>FAQ</title>
+    <link rel="stylesheet" href="./styles/pages/faq/_index.css" />
+    <script defer src="./js/components/navbar.js"></script>
+    <title>Campus Champs - University Sports Hub</title>
   </head>
   <body>
     <!-- Header Start-->
@@ -24,7 +20,7 @@
           <div class="link-container">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About Us</a>
-            <a href="events.html" class="nav-link">Events</a>
+            <a href="events/index.html" class="nav-link">Events</a>
             <a href="announcements.html" class="nav-link">Announcements</a>
             <a href="contact.html" class="nav-link">Contact Us</a>
           </div>
@@ -35,7 +31,71 @@
 
     <!-- Main Start -->
     <main>
-      <h1>FAQ</h1>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="bg"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>
+              Your questions answered. Find out more about Campus Champs here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-container">
+        <div class="faq-item">
+          <h3 class="faq-question">What is Campus Champs?</h3>
+          <p class="faq-answer">
+            Campus Champs is a dynamic university sports organization dedicated
+            to fostering athletic talent, promoting teamwork, and encouraging a
+            healthy lifestyle among students.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How can I join Campus Champs?</h3>
+          <p class="faq-answer">
+            You can join Campus Champs by visiting our
+            <a href="/membership">membership page</a>, where you'll find all the
+            information you need to get started.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            Do I need to be a student to participate?
+          </h3>
+          <p class="faq-answer">
+            Yes, Campus Champs is exclusively for university students who wish
+            to participate in sports, compete in tournaments, or be part of our
+            athletic community.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">
+            What sports are available at Campus Champs?
+          </h3>
+          <p class="faq-answer">
+            We offer a variety of sports including football, basketball,
+            swimming, tennis, and chess. We also hold annual tournaments across
+            these sports.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How can I contact Campus Champs?</h3>
+          <p class="faq-answer">
+            You can contact us through our
+            <a href="contact.html">Contact Us</a> page or directly email us at
+            <a href="mailto:contact@campuschamps.org"
+              >contact@campuschamps.org</a
+            >.
+          </p>
+        </div>
+      </section>
     </main>
     <!-- Main End -->
 
@@ -56,7 +116,7 @@
           <h4>Links</h4>
           <ul>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="sports.html">Sports</a></li>
+            <li><a href="./sports/index.html">Sports</a></li>
             <li><a href="support.html">Support</a></li>
             <li><a href="resources.html">Resources</a></li>
           </ul>

@@ -3,7 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/pages/events/_index.css" />
+    <script defer src="../js/components/navbar.js"></script>
+
+    <title>Campus Champs - University Sports Hub</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header Start-->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <h1>Campus Champs</h1>
+        </a>
+        <span class="hamberger-menu"></span>
+        <div class="nav-links">
+          <span class="close"></span>
+          <div class="link-container">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../about.html" class="nav-link">About Us</a>
+            <a href="index.html" class="nav-link">Events</a>
+            <a href="../announcements.html" class="nav-link">Announcements</a>
+            <a href="../contact.html" class="nav-link">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End-->
+
+    <!-- Main Start -->
+    <main>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="bg"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Upcoming & Past Events</span></h1>
+            <p>
+              Building champions, fostering sportsmanship, and promoting
+              excellence in university sports.
+            </p>
+          </div>
+        </div>
+      </section>
+
+       <!-- Search and Filter -->
+    <section class="filters">
+      <input type="text" placeholder="Search events..." id="event-search">
+      <select id="event-category">
+        <option value="all">All Categories</option>
+        <option value="football">Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="swimming">Swimming</option>
+        <option value="tennis">Tennis</option>
+      </select>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div class="event-cards">
+        <div class="event-card">
+          <img src="../images/football.jpg" alt="football">
+          <div class="event-info">
+            <h3>Football Tournament</h3>
+            <p>Date: December 15, 2024</p>
+            <p>Location: Campus Stadium</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="../images/basketball.jpg" alt="basketball">
+          <div class="event-info">
+            <h3>Basketball Championship</h3>
+            <p>Date: January 10, 2025</p>
+            <p>Location: Sports Arena</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="../images/swimming.jpg" alt="football">
+          <div class="event-info">
+            <h3>Swimming Meet</h3>
+            <p>Date: February 20, 2025</p>
+            <p>Location: University Pool</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="past-events">
+      <h2>Past Events</h2>
+      <div class="event-cards">
+        <div class="event-card">
+          <img src="../images/tennis.jpg" alt="Tennis Tournament">
+          <div class="event-info">
+            <h3>Tennis Tournament</h3>
+            <p>Date: November 5, 2024</p>
+            <p>Winner: Alex Morgan</p>
+          </div>
+        </div>
+        <div class="event-card">
+          <img src="../images/chess.jpg" alt="Chess Tournament">
+          <div class="event-info">
+            <h3>Chess Grand Prix</h3>
+            <p>Date: October 15, 2024</p>
+            <p>Winner: Lisa Brown</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start-->
+    <footer>
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+          <h4>About Campus Champs</h4>
+          <p>
+            Your gateway to sports excellence at the university. Join, play, and
+            achieve with us.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-section links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="../sports/index.html">Sports</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:contact@campuschamps.org"
+              >contact@campuschamps.org</a
+            >
+          </p>
+          <p>Phone: <a href="tel:+977980123456">+977 980123456</a></p>
+        </div>
+
+        <!-- Socials -->
+        <div class="footer-section socials">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="../images/icons/facebook.svg" class="social-logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="../images/icons/instagram.svg" class="social-logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/">
+                <img src="../images/icons/twitter.svg" class="social-logo" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com">
+                <img src="../images/icons/youtube.svg" class="social-logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Campus Champs. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End-->
+  </body>
 </html>

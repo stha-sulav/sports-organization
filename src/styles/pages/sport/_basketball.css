@@ -1,0 +1,6 @@
+.hero {
+  .overlay {
+    background: url("../../../images/basketball-court.jpg") center/cover
+      no-repeat;
+  }
+}

@@ -3,13 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/announcements.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <script defer src="./functionality/navbar.js"></script>
-    <title>Announcements</title>
+    <link rel="stylesheet" href="./styles/pages/announcements/_index.css" />
+    <script defer src="./js/components/navbar.js"></script>
+    <title>Campus Champs - University Sports Hub</title>
   </head>
   <body>
     <!-- Header Start-->
@@ -24,7 +20,7 @@
           <div class="link-container">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About Us</a>
-            <a href="events.html" class="nav-link">Events</a>
+            <a href="events/index.html" class="nav-link">Events</a>
             <a href="announcements.html" class="nav-link">Announcements</a>
             <a href="contact.html" class="nav-link">Contact Us</a>
           </div>
@@ -35,7 +31,67 @@
 
     <!-- Main Start -->
     <main>
-      <h1>announcements</h1>
+      <section class="hero">
+        <div class="overlay"></div>
+        <div class="bg"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Latest <span class="highlight">Announcements</span></h1>
+            <p>
+              Stay updated with the latest news and updates from Campus Champs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <input
+          type="text"
+          id="announcement-search"
+          placeholder="Search announcements..."
+        />
+        <select id="announcement-category">
+          <option value="all">All Categories</option>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+          <option value="swimming">Swimming</option>
+          <option value="general">General</option>
+        </select>
+      </section>
+      <section class="announcements-container">
+        <div class="announcement-card" data-category="football">
+          <h3>Football Practice Schedule Updated</h3>
+          <p>
+            Practice sessions are now scheduled for Tuesdays and Thursdays at 6
+            PM.
+          </p>
+          <span class="date">November 15, 2024</span>
+        </div>
+        <div class="announcement-card" data-category="basketball">
+          <h3>Basketball Tryouts Next Week</h3>
+          <p>
+            Join us for tryouts on November 20th at the Sports Arena. Open to
+            all students!
+          </p>
+          <span class="date">November 10, 2024</span>
+        </div>
+        <div class="announcement-card" data-category="general">
+          <h3>Sports Award Ceremony</h3>
+          <p>
+            The annual Sports Award Ceremony will be held on December 5th. Don’t
+            miss it!
+          </p>
+          <span class="date">November 8, 2024</span>
+        </div>
+        <div class="announcement-card" data-category="swimming">
+          <h3>New Pool Timings Announced</h3>
+          <p>
+            The university swimming pool will now open at 7 AM starting next
+            week.
+          </p>
+          <span class="date">November 5, 2024</span>
+        </div>
+      </section>
     </main>
     <!-- Main End -->
 
@@ -56,7 +112,7 @@
           <h4>Links</h4>
           <ul>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="sports.html">Sports</a></li>
+            <li><a href="./sports/index.html">Sports</a></li>
             <li><a href="support.html">Support</a></li>
             <li><a href="resources.html">Resources</a></li>
           </ul>

@@ -1,0 +1,144 @@
+.border {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  margin-left: 1rem;
+}
+
+.program-info {
+  padding: 30px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.program-info h2 {
+  font-size: 2rem;
+}
+
+.program-image {
+  margin-top: 20px;
+}
+
+.program-image img {
+  width: 100%;
+  height: auto;
+}
+
+.why-join {
+  padding: 30px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.why-join ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.why-join li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0.5px var(--shadow-light);
+  padding: 2rem;
+  width: 20%;
+  max-width: 350px;
+}
+
+.upcoming-events {
+  padding: 30px;
+  text-align: center;
+}
+
+.events-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.event-card a {
+  display: block;
+  margin: 1rem auto;
+  width: 60%;
+  max-width: 10rem;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+}
+
+.join-now {
+  padding: 30px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.join-now h2 {
+  font-size: 2rem;
+}
+
+.join-now p {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-section {
+  width: 30%;
+}
+
+footer .footer-bottom {
+  padding: 10px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .events-list {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+}
