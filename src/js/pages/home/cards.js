@@ -12,7 +12,7 @@ cardTemplate.innerHTML = `
   </div>
 `;
 
-const items = [
+const featuredSportsItems = [
   {
     name: "Football",
     description:
@@ -39,7 +39,7 @@ const items = [
   },
 ];
 
-const cardContents = items.map((item) => {
+const cardContents = featuredSportsItems.map((item) => {
   // Clone the template content
   const content = cardTemplate.content.cloneNode(true);
 
@@ -60,7 +60,7 @@ const cardContents = items.map((item) => {
   const link = content.querySelector(".btn-accent");
   link.href = `sports/${item.name.toLowerCase()}.html`;
 
-  return content; // Return the cloned and modified template
+  return content;
 });
 
 // Append the cards to the container
@@ -68,6 +68,4 @@ if (Array.isArray(cardContents)) {
   cardContents.forEach((content) => {
     cardContainer.appendChild(content);
   });
-} else {
-  console.error("cardContents is not an array:", cardContents);
 }

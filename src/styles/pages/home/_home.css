@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-  height: 40vh;
+  height: var(--hero-height);
   text-align: center;
   color: var(--text-inverse);
   padding: 3rem 1rem;
@@ -28,18 +28,21 @@
   }
 
   .hero-container {
+    display: flex;
+    align-items: center;
     z-index: 1;
     padding: var(--content-padding);
 
     .hero-content {
       h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: var(--hero-heading-font-size);
+        margin-bottom: var(--hero-heading-margin-bottom);
       }
 
       p {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
+        font-size: var(--hero-paragraph-font-size);
+        margin-bottom: var(--hero-paragraph-margin-bottom);
+        max-width: 500px;
       }
     }
     .hero-img-container {
@@ -56,7 +59,7 @@
   h2 {
     text-align: center;
     margin: var(--content-padding);
-    font-size: 1.8rem;
+    font-size: var(--h2-font-size);
   }
 
   .card-container {
@@ -68,10 +71,81 @@
   }
 }
 
+hr {
+  width: 60%;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+/* Upcomming Sports Section */
+.upcomming-events {
+  padding: var(--content-padding);
+  background-color: var(--base-grey);
+  text-align: center;
+
+  h2 {
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--hero-heading-margin-bottom);
+  }
+
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+
+    .event-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px var(--shadow-light);
+      text-align: left;
+
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .event-date {
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .event-description,
+      .event-date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        img {
+          width: 1.5rem;
+        }
+      }
+
+      .event-description {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #666;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 /* Responsive Design */
 @media (min-width: 768px) {
   .hero {
-    height: 60vh;
     text-align: left;
 
     .hero-container {
@@ -104,15 +178,13 @@
 
 @media (min-width: 1024px) {
   .hero {
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
-
     .hero-container {
+      .hero-content {
+        p {
+          max-width: 80%;
+        }
+      }
+
       .hero-img-container {
         display: block;
         flex-basis: var(--hero-image-container-width);
@@ -157,20 +229,14 @@
 
 @media (min-width: 1600px) {
   .hero .hero-container,
-  .featured-sports {
+  .featured-sports,
+  .upcomming-events {
     max-width: var(--max-width);
     padding: 0;
+    margin: auto;
   }
 
   .hero {
-    h1 {
-      font-size: 3rem;
-    }
-
-    p {
-      font-size: 2rem;
-    }
-
     .hero-container {
       left: 50%;
       transform: translateX(-50%);
@@ -178,13 +244,18 @@
   }
 
   .featured-sports {
-    margin: auto;
     .card-container {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+    }
+  }
+
+  .upcomming-events {
+    .events-container {
+      padding: 1rem 0;
     }
   }
 }

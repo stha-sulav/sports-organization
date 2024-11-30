@@ -1,0 +1,22 @@
+main {
+  --belief-item-height: 8rem;
+  --hightlights-items-width: 100%;
+  --hightlights-container-width: 100%;
+  --max-hightlights-container-width: 800px;
+}
+
+@media (min-width: 768px) {
+  main {
+    --hightlights-items-width: 15rem;
+    --hightlights-container-width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    --belief-item-height: 10rem;
+    --hightlights-container-width: 60%;
+
+    /* --hightlights-items-width: 100; */
+  }
+}
